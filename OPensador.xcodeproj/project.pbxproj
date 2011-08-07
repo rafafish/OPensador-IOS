@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04831B1E13EF1E29004D7D0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04831B1D13EF1E29004D7D0F /* UIKit.framework */; };
+		04831B2013EF1E29004D7D0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04831B1F13EF1E29004D7D0F /* Foundation.framework */; };
+		04831B2213EF1E29004D7D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04831B2113EF1E29004D7D0F /* CoreGraphics.framework */; };
+		04831B2813EF1E29004D7D0F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04831B2613EF1E29004D7D0F /* InfoPlist.strings */; };
+		04831B2B13EF1E29004D7D0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04831B2A13EF1E29004D7D0F /* main.m */; };
+		04831B2E13EF1E29004D7D0F /* OPensadorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04831B2D13EF1E29004D7D0F /* OPensadorAppDelegate.m */; };
+		04831B3113EF1E29004D7D0F /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04831B2F13EF1E29004D7D0F /* MainWindow.xib */; };
+		04831B3413EF1E29004D7D0F /* OPensadorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04831B3313EF1E29004D7D0F /* OPensadorViewController.m */; };
+		04831B3713EF1E29004D7D0F /* OPensadorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04831B3513EF1E29004D7D0F /* OPensadorViewController.xib */; };
+		04831B3E13EF1E29004D7D0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04831B1D13EF1E29004D7D0F /* UIKit.framework */; };
+		04831B3F13EF1E29004D7D0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04831B1F13EF1E29004D7D0F /* Foundation.framework */; };
+		04831B4013EF1E29004D7D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04831B2113EF1E29004D7D0F /* CoreGraphics.framework */; };
+		04831B4813EF1E29004D7D0F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04831B4613EF1E29004D7D0F /* InfoPlist.strings */; };
+		04831B4B13EF1E29004D7D0F /* OPensadorTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 04831B4A13EF1E29004D7D0F /* OPensadorTests.h */; };
+		04831B4D13EF1E29004D7D0F /* OPensadorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04831B4C13EF1E29004D7D0F /* OPensadorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04831B4113EF1E29004D7D0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04831B1013EF1E29004D7D0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04831B1813EF1E29004D7D0F;
+			remoteInfo = OPensador;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04831B1913EF1E29004D7D0F /* OPensador.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OPensador.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04831B1D13EF1E29004D7D0F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		04831B1F13EF1E29004D7D0F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04831B2113EF1E29004D7D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		04831B2513EF1E29004D7D0F /* OPensador-Info.plist */ = {isa = PBXFileReference; path = "OPensador-Info.plist"; sourceTree = "<group>"; };
+		04831B2713EF1E29004D7D0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04831B2913EF1E29004D7D0F /* OPensador-Prefix.pch */ = {isa = PBXFileReference; path = "OPensador-Prefix.pch"; sourceTree = "<group>"; };
+		04831B2A13EF1E29004D7D0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04831B2C13EF1E29004D7D0F /* OPensadorAppDelegate.h */ = {isa = PBXFileReference; path = OPensadorAppDelegate.h; sourceTree = "<group>"; };
+		04831B2D13EF1E29004D7D0F /* OPensadorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OPensadorAppDelegate.m; sourceTree = "<group>"; };
+		04831B3013EF1E29004D7D0F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		04831B3213EF1E29004D7D0F /* OPensadorViewController.h */ = {isa = PBXFileReference; path = OPensadorViewController.h; sourceTree = "<group>"; };
+		04831B3313EF1E29004D7D0F /* OPensadorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OPensadorViewController.m; sourceTree = "<group>"; };
+		04831B3613EF1E29004D7D0F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/OPensadorViewController.xib; sourceTree = "<group>"; };
+		04831B3D13EF1E29004D7D0F /* OPensadorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OPensadorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04831B4513EF1E29004D7D0F /* OPensadorTests-Info.plist */ = {isa = PBXFileReference; path = "OPensadorTests-Info.plist"; sourceTree = "<group>"; };
+		04831B4713EF1E29004D7D0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04831B4913EF1E29004D7D0F /* OPensadorTests-Prefix.pch */ = {isa = PBXFileReference; path = "OPensadorTests-Prefix.pch"; sourceTree = "<group>"; };
+		04831B4A13EF1E29004D7D0F /* OPensadorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OPensadorTests.h; sourceTree = "<group>"; };
+		04831B4C13EF1E29004D7D0F /* OPensadorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OPensadorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04831B1613EF1E29004D7D0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04831B1E13EF1E29004D7D0F /* UIKit.framework in Frameworks */,
+				04831B2013EF1E29004D7D0F /* Foundation.framework in Frameworks */,
+				04831B2213EF1E29004D7D0F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04831B3913EF1E29004D7D0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04831B3E13EF1E29004D7D0F /* UIKit.framework in Frameworks */,
+				04831B3F13EF1E29004D7D0F /* Foundation.framework in Frameworks */,
+				04831B4013EF1E29004D7D0F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04831B0E13EF1E29004D7D0F = {
+			isa = PBXGroup;
+			children = (
+				04831B2313EF1E29004D7D0F /* OPensador */,
+				04831B4313EF1E29004D7D0F /* OPensadorTests */,
+				04831B1C13EF1E29004D7D0F /* Frameworks */,
+				04831B1A13EF1E29004D7D0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04831B1A13EF1E29004D7D0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04831B1913EF1E29004D7D0F /* OPensador.app */,
+				04831B3D13EF1E29004D7D0F /* OPensadorTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04831B1C13EF1E29004D7D0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04831B1D13EF1E29004D7D0F /* UIKit.framework */,
+				04831B1F13EF1E29004D7D0F /* Foundation.framework */,
+				04831B2113EF1E29004D7D0F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04831B2313EF1E29004D7D0F /* OPensador */ = {
+			isa = PBXGroup;
+			children = (
+				04831B2C13EF1E29004D7D0F /* OPensadorAppDelegate.h */,
+				04831B2D13EF1E29004D7D0F /* OPensadorAppDelegate.m */,
+				04831B2F13EF1E29004D7D0F /* MainWindow.xib */,
+				04831B3213EF1E29004D7D0F /* OPensadorViewController.h */,
+				04831B3313EF1E29004D7D0F /* OPensadorViewController.m */,
+				04831B3513EF1E29004D7D0F /* OPensadorViewController.xib */,
+				04831B2413EF1E29004D7D0F /* Supporting Files */,
+			);
+			path = OPensador;
+			sourceTree = "<group>";
+		};
+		04831B2413EF1E29004D7D0F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04831B2513EF1E29004D7D0F /* OPensador-Info.plist */,
+				04831B2613EF1E29004D7D0F /* InfoPlist.strings */,
+				04831B2913EF1E29004D7D0F /* OPensador-Prefix.pch */,
+				04831B2A13EF1E29004D7D0F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04831B4313EF1E29004D7D0F /* OPensadorTests */ = {
+			isa = PBXGroup;
+			children = (
+				04831B4A13EF1E29004D7D0F /* OPensadorTests.h */,
+				04831B4C13EF1E29004D7D0F /* OPensadorTests.m */,
+				04831B4413EF1E29004D7D0F /* Supporting Files */,
+			);
+			path = OPensadorTests;
+			sourceTree = "<group>";
+		};
+		04831B4413EF1E29004D7D0F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04831B4513EF1E29004D7D0F /* OPensadorTests-Info.plist */,
+				04831B4613EF1E29004D7D0F /* InfoPlist.strings */,
+				04831B4913EF1E29004D7D0F /* OPensadorTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04831B1813EF1E29004D7D0F /* OPensador */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04831B5013EF1E29004D7D0F /* Build configuration list for PBXNativeTarget "OPensador" */;
+			buildPhases = (
+				04831B1513EF1E29004D7D0F /* Sources */,
+				04831B1613EF1E29004D7D0F /* Frameworks */,
+				04831B1713EF1E29004D7D0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OPensador;
+			productName = OPensador;
+			productReference = 04831B1913EF1E29004D7D0F /* OPensador.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04831B3C13EF1E29004D7D0F /* OPensadorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04831B5313EF1E29004D7D0F /* Build configuration list for PBXNativeTarget "OPensadorTests" */;
+			buildPhases = (
+				04831B3813EF1E29004D7D0F /* Sources */,
+				04831B3913EF1E29004D7D0F /* Frameworks */,
+				04831B3A13EF1E29004D7D0F /* Resources */,
+				04831B3B13EF1E29004D7D0F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04831B4213EF1E29004D7D0F /* PBXTargetDependency */,
+			);
+			name = OPensadorTests;
+			productName = OPensadorTests;
+			productReference = 04831B3D13EF1E29004D7D0F /* OPensadorTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04831B1013EF1E29004D7D0F /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 04831B1313EF1E29004D7D0F /* Build configuration list for PBXProject "OPensador" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 04831B0E13EF1E29004D7D0F;
+			productRefGroup = 04831B1A13EF1E29004D7D0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04831B1813EF1E29004D7D0F /* OPensador */,
+				04831B3C13EF1E29004D7D0F /* OPensadorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04831B1713EF1E29004D7D0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04831B2813EF1E29004D7D0F /* InfoPlist.strings in Resources */,
+				04831B3113EF1E29004D7D0F /* MainWindow.xib in Resources */,
+				04831B3713EF1E29004D7D0F /* OPensadorViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04831B3A13EF1E29004D7D0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04831B4813EF1E29004D7D0F /* InfoPlist.strings in Resources */,
+				04831B4B13EF1E29004D7D0F /* OPensadorTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04831B3B13EF1E29004D7D0F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04831B1513EF1E29004D7D0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04831B2B13EF1E29004D7D0F /* main.m in Sources */,
+				04831B2E13EF1E29004D7D0F /* OPensadorAppDelegate.m in Sources */,
+				04831B3413EF1E29004D7D0F /* OPensadorViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04831B3813EF1E29004D7D0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04831B4D13EF1E29004D7D0F /* OPensadorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04831B4213EF1E29004D7D0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04831B1813EF1E29004D7D0F /* OPensador */;
+			targetProxy = 04831B4113EF1E29004D7D0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04831B2613EF1E29004D7D0F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04831B2713EF1E29004D7D0F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		04831B2F13EF1E29004D7D0F /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04831B3013EF1E29004D7D0F /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		04831B3513EF1E29004D7D0F /* OPensadorViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04831B3613EF1E29004D7D0F /* en */,
+			);
+			name = OPensadorViewController.xib;
+			sourceTree = "<group>";
+		};
+		04831B4613EF1E29004D7D0F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04831B4713EF1E29004D7D0F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04831B4E13EF1E29004D7D0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04831B4F13EF1E29004D7D0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		04831B5113EF1E29004D7D0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OPensador/OPensador-Prefix.pch";
+				INFOPLIST_FILE = "OPensador/OPensador-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		04831B5213EF1E29004D7D0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OPensador/OPensador-Prefix.pch";
+				INFOPLIST_FILE = "OPensador/OPensador-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		04831B5413EF1E29004D7D0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OPensador.app/OPensador";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OPensadorTests/OPensadorTests-Prefix.pch";
+				INFOPLIST_FILE = "OPensadorTests/OPensadorTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		04831B5513EF1E29004D7D0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OPensador.app/OPensador";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OPensadorTests/OPensadorTests-Prefix.pch";
+				INFOPLIST_FILE = "OPensadorTests/OPensadorTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04831B1313EF1E29004D7D0F /* Build configuration list for PBXProject "OPensador" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04831B4E13EF1E29004D7D0F /* Debug */,
+				04831B4F13EF1E29004D7D0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04831B5013EF1E29004D7D0F /* Build configuration list for PBXNativeTarget "OPensador" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04831B5113EF1E29004D7D0F /* Debug */,
+				04831B5213EF1E29004D7D0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04831B5313EF1E29004D7D0F /* Build configuration list for PBXNativeTarget "OPensadorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04831B5413EF1E29004D7D0F /* Debug */,
+				04831B5513EF1E29004D7D0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04831B1013EF1E29004D7D0F /* Project object */;
+}
