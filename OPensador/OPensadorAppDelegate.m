@@ -7,24 +7,166 @@
 //
 
 #import "OPensadorAppDelegate.h"
+#import "AutoresViewController.h"
+#import "Frase.h"
+#import "Autor.h"
+#import "FrasesDoAutorViewController.h"
 
-#import "OPensadorViewController.h"
+
+
 
 @implementation OPensadorAppDelegate
 
 
 @synthesize window=_window;
+//@synthesize viewController=_viewController;
+@synthesize tabBarController=_tabBarController;
 
-@synthesize viewController=_viewController;
+@synthesize Autores,AutorID,IndiceFraseDoAutor,FrasesDoAutor,AllFrases,palavraBusca,FrasesBusca,IndiceFraseBusca,InicioPaginaNumPag,AutorPaginaNumPag,BuscaPaginaNumPag;
+
+
+
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    
     // Override point for customization after application launch.
      
-    self.window.rootViewController = self.viewController;
+    // Setup some globals
+	databaseName = @"db_frases.sqlite";
+	
+	// Get the path to the documents directory and append the databaseName
+	NSArray *documentPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *documentsDir = [documentPaths objectAtIndex:0];
+	databasePath = [documentsDir stringByAppendingPathComponent:databaseName];
+	
+	// Execute the "checkAndCreateDatabase" function
+	[self checkAndCreateDatabase];
+    [self LeAutoresDoDatabase];
+    [self LeTodasFrasesDoDatabase];
+	
+	// Query the database for all animal records and construct the "animals" array
+
+    
+//    self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
 }
+
+
+-(void) LeAutoresDoDatabase {
+	
+	// Get the path to the documents directory and append the databaseName
+	NSArray *documentPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *documentsDir = [documentPaths objectAtIndex:0];
+	databasePath = [documentsDir stringByAppendingPathComponent:databaseName];    
+	// Setup the database object
+	sqlite3 *database;
+	
+
+	// Init the animals Array
+	Autores = [[NSMutableArray alloc] init];
+	
+	// Open the database from the users filessytem
+	if(sqlite3_open([databasePath UTF8String], &database) == SQLITE_OK) {
+		// Setup the SQL Statement and compile it for faster access
+		const char *sqlStatement = "select * from Autores";
+		sqlite3_stmt *compiledStatement;
+		if(sqlite3_prepare_v2(database, sqlStatement, -1, &compiledStatement, NULL) == SQLITE_OK) {
+			// Loop through the results and add them to the feeds array
+			while(sqlite3_step(compiledStatement) == SQLITE_ROW) {
+				// Read the data from the result row
+                NSInteger sIdAutor = sqlite3_column_int(compiledStatement, 0);
+				NSString *sNomeAutor = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 1)];
+				
+				// Create a new animal object with the data from the database
+				Autor *tAutor = [[Autor alloc] initWithAutor:sNomeAutor:sIdAutor];
+				
+				// Add the animal object to the animals Array
+				[Autores addObject:tAutor];
+				
+				[tAutor release];
+			}
+		}
+		// Release the compiled statement from memory
+		sqlite3_finalize(compiledStatement);
+		
+	}
+	sqlite3_close(database);
+	
+}
+
+
+
+-(void) LeTodasFrasesDoDatabase {
+	// Get the path to the documents directory and append the databaseName
+	NSArray *documentPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *documentsDir = [documentPaths objectAtIndex:0];
+	databasePath = [documentsDir stringByAppendingPathComponent:databaseName];    
+	// Setup the database object
+	sqlite3 *database;
+	
+	// Init  animals Array
+	AllFrases = [[NSMutableArray alloc] init];
+	
+	// Open the database from the users filessytem
+	if(sqlite3_open([databasePath UTF8String], &database) == SQLITE_OK) {
+		// Setup the SQL Statement and compile it for faster access
+		
+ 		const char *sql = "select * from Frases group by random() limit 1000";
+		sqlite3_stmt *selectstmt;
+		if(sqlite3_prepare_v2(database, sql, -1, &selectstmt, NULL) == SQLITE_OK) {
+        
+		while(sqlite3_step(selectstmt) == SQLITE_ROW) {
+            // Read the data from the result row
+            NSInteger sIdFrase = sqlite3_column_int(selectstmt, 0);
+            NSInteger sIdAutor = sqlite3_column_int(selectstmt, 1);
+            NSString *sTxtFrase = [NSString stringWithUTF8String:(char *)sqlite3_column_text(selectstmt, 2)];
+            
+            // Create a new animal object with the data from the database
+            Frase *tFrase = [[Frase alloc] initWithFrase:sTxtFrase:sIdAutor:sIdFrase];
+            
+            // Add the animal object to the animals Array
+            [AllFrases addObject:tFrase];
+            
+            [tFrase release];
+        }
+    }
+    // Release the compiled statement from memory
+    sqlite3_close(database);
+  }
+}
+
+
+
+-(void) checkAndCreateDatabase{
+	// Check if the SQL database has already been saved to the users phone, if not then copy it over
+	BOOL success;
+	
+	// Create a FileManager object, we will use this to check the status
+	// of the database and to copy it over if required
+	NSFileManager *fileManager = [NSFileManager defaultManager];
+	
+	// Check if the database has already been created in the users filesystem
+	success = [fileManager fileExistsAtPath:databasePath];
+	
+	// If the database already exists then return without doing anything
+	if(success) return;
+	
+	// If not then proceed to copy the database from the application to the users filesystem
+	
+	// Get the path to the database in the application package
+	NSString *databasePathFromApp = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:databaseName];
+	
+	// Copy the database from the package to the users filesystem
+	[fileManager copyItemAtPath:databasePathFromApp toPath:databasePath error:nil];
+	
+	[fileManager release];
+}
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
@@ -67,8 +209,11 @@
 
 - (void)dealloc
 {
+    [Autores release];
+    [FrasesDoAutor release];
     [_window release];
-    [_viewController release];
+//    [_viewController release];
+    [tabBarController release];
     [super dealloc];
 }
 

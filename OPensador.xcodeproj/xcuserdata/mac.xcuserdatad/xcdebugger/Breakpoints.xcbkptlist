@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "1.0">
+   <FileBreakpoints>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "OPensador/OPensadorAppDelegate.m"
+         timestampString = "334778373.405275"
+         startingColumnNumber = "2147483647"
+         endingColumnNumber = "2147483647"
+         startingLineNumber = "49"
+         endingLineNumber = "49"
+         landmarkName = "-application:didFinishLaunchingWithOptions:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "OPensador/FrasesViewController.m"
+         timestampString = "334843660.46978"
+         startingColumnNumber = "2147483647"
+         endingColumnNumber = "2147483647"
+         startingLineNumber = "57"
+         endingLineNumber = "57"
+         landmarkName = "-LeFrasesDoDatabase"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "OPensador/AutoresViewController.m"
+         timestampString = "334866416.596147"
+         startingColumnNumber = "2147483647"
+         endingColumnNumber = "2147483647"
+         startingLineNumber = "334"
+         endingLineNumber = "334"
+         landmarkName = "-tableView:didSelectRowAtIndexPath:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ResultadoBuscaViewController.m"
+         timestampString = "335096705.615926"
+         startingColumnNumber = "2147483647"
+         endingColumnNumber = "2147483647"
+         startingLineNumber = "49"
+         endingLineNumber = "49"
+         landmarkName = "-BuscaFraseNoDatabase"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "FrasePaginaViewController.m"
+         timestampString = "334839640.137275"
+         startingColumnNumber = "2147483647"
+         endingColumnNumber = "2147483647"
+         startingLineNumber = "18"
+         endingLineNumber = "18"
+         landmarkName = "@implementation FrasePaginaViewController"
+         landmarkType = "3">
+         <Locations>
+            <Location
+               shouldBeEnabled = "No"
+               ignoreCount = "0"
+               continueAfterRunningActions = "No"
+               symbolName = "-[FrasePaginaViewController FraseTextView]"
+               urlString = "file://localhost/FrasePaginaViewController.m"
+               timestampString = "334839486.425775"
+               startingColumnNumber = "2147483647"
+               endingColumnNumber = "2147483647"
+               startingLineNumber = "18"
+               endingLineNumber = "18">
+            </Location>
+            <Location
+               shouldBeEnabled = "No"
+               ignoreCount = "0"
+               continueAfterRunningActions = "No"
+               symbolName = "-[FrasePaginaViewController setFraseTextView:]"
+               urlString = "file://localhost/FrasePaginaViewController.m"
+               timestampString = "334839486.455365"
+               startingColumnNumber = "2147483647"
+               endingColumnNumber = "2147483647"
+               startingLineNumber = "18"
+               endingLineNumber = "18">
+            </Location>
+         </Locations>
+      </FileBreakpoint>
+   </FileBreakpoints>
+</Bucket>
